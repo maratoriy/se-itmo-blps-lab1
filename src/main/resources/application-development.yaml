@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: se-itmo-blps-lab1
+
+  datasource:
+    url:
+    username:
+    password:
