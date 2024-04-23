@@ -6,3 +6,6 @@ spring:
     url:
     username:
     password:
+
+  liquibase:
+    change-log: classpath:/db/changelog/changelog.xml
