@@ -5,6 +5,6 @@
                 http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.3.xsd">
 
     <include file="movie/movie.sql" relativeToChangelogFile="true"/>
-    <include file="movie/user.sql" relativeToChangelogFile="true"/>
-    <include file="movie/review.sql" relativeToChangelogFile="true"/>
+    <include file="user/user.sql" relativeToChangelogFile="true"/>
+    <include file="review/review.sql" relativeToChangelogFile="true"/>
 </databaseChangeLog>

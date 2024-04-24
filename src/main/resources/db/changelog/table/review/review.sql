@@ -10,6 +10,6 @@ CREATE TABLE IF NOT EXISTS review (
     creation_date    TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     publication_date TIMESTAMP,
 
-    CONSTRAINT fk_review_user FOREIGN KEY (user_id) REFERENCES user (id),
+    CONSTRAINT fk_review_user FOREIGN KEY (user_id) REFERENCES "user" (id),
     CONSTRAINT fk_review_movie FOREIGN KEY (movie_id) REFERENCES movie (id)
 );

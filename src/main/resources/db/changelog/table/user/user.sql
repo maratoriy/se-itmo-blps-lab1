@@ -1,7 +1,7 @@
 --liquibase formatted sql
 
 --changeset moratorium:user_create
-CREATE TABLE IF NOT EXISTS user (
+CREATE TABLE IF NOT EXISTS "user" (
     id       BIGINT PRIMARY KEY,
     name     VARCHAR(255) NOT NULL,
     email    VARCHAR(255) NOT NULL UNIQUE,
