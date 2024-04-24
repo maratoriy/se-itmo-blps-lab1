@@ -16,6 +16,6 @@ import lombok.RequiredArgsConstructor;
 @Builder
 @EqualsAndHashCode
 public class GetMovieReviewsResponseDto {
-    @ArraySchema(schema = @Schema(implementation = GetMovieReviewResponseDto.class, title = "Рецензия"))
+    @ArraySchema(schema = @Schema(implementation = GetMovieReviewResponseDto.class))
     private final List<GetMovieReviewResponseDto> reviews;
 }
