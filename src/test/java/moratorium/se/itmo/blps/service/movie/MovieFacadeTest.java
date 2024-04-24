@@ -7,8 +7,6 @@ import moratorium.se.itmo.blps.controller.movie.dto.AddMovieRequestDto;
 import moratorium.se.itmo.blps.controller.movie.dto.AddMovieResponseDto;
 import moratorium.se.itmo.blps.controller.movie.dto.GetMoviesResponseDto;
 import moratorium.se.itmo.blps.domain.movie.MovieEntity;
-import moratorium.se.itmo.blps.service.movie.mapper.MovieMapper;
-import moratorium.se.itmo.blps.service.movie.mapper.MovieMapperImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
