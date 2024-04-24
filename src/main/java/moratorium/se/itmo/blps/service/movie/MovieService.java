@@ -1,6 +1,7 @@
 package moratorium.se.itmo.blps.service.movie;
 
 import java.util.List;
+import java.util.NoSuchElementException;
 
 import lombok.RequiredArgsConstructor;
 import moratorium.se.itmo.blps.domain.movie.MovieEntity;
@@ -19,5 +20,9 @@ public class MovieService {
 
     public List<MovieEntity> getMovies() {
         return movieRepo.findAll();
+    }
+
+    public MovieEntity getMovie(Long movieId) {
+        return movieRepo.findById(movieId).orElseThrow(NoSuchElementException::new);
     }
 }

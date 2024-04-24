@@ -5,7 +5,6 @@ import lombok.extern.slf4j.Slf4j;
 import moratorium.se.itmo.blps.controller.movie.dto.AddMovieRequestDto;
 import moratorium.se.itmo.blps.controller.movie.dto.AddMovieResponseDto;
 import moratorium.se.itmo.blps.controller.movie.dto.GetMoviesResponseDto;
-import moratorium.se.itmo.blps.service.movie.mapper.MovieMapper;
 import org.springframework.stereotype.Service;
 
 @Slf4j
@@ -17,10 +16,10 @@ public class MovieFacade {
 
     // @Transactional
     public AddMovieResponseDto addMovie(AddMovieRequestDto createRequestDto) {
-        final Long addedMovieId = movieService.addMovie(movieMapper.map(createRequestDto));
+        final Long savedEntityId = movieService.addMovie(movieMapper.map(createRequestDto));
 
         return AddMovieResponseDto.builder()
-                .movieId(addedMovieId)
+                .movieId(savedEntityId)
                 .build();
     }
 

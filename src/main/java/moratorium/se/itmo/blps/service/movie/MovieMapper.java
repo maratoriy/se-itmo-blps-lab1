@@ -1,4 +1,4 @@
-package moratorium.se.itmo.blps.service.movie.mapper;
+package moratorium.se.itmo.blps.service.movie;
 
 import moratorium.se.itmo.blps.controller.movie.dto.AddMovieRequestDto;
 import moratorium.se.itmo.blps.controller.movie.dto.GetMovieResponseDto;
