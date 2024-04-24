@@ -2,7 +2,7 @@
 
 --changeset moratorium:movie_create
 CREATE TABLE IF NOT EXISTS movie (
-    id           BIGINT PRIMARY KEY,
+    id           BIGSERIAL PRIMARY KEY,
     title        VARCHAR(255) NOT NULL,
     description  TEXT,
     director     VARCHAR(255),
