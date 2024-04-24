@@ -2,6 +2,10 @@ spring:
   application:
     name: se-itmo-blps-lab1
 
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
   datasource:
     url:
     username:
