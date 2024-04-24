@@ -1,0 +1,11 @@
+<dataset>
+    <movie
+            id="1"
+            title="Фильм1"
+            description="Описание1"
+            director="Директор1"
+            release_year="1920"
+            genre="Жанр1"
+            duration="120"
+    />
+</dataset>
